@@ -60,7 +60,7 @@
                   <li class="dropdown avatar-dropdown">
                    <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="dropdown-menu user-dropdown">
-                     <li><a href="#"><span class="fa fa-user"></span> My Profile</a></li>
+                     <li><a href="/dashboard/profile"><span class="fa fa-user"></span> My Profile</a></li>
                      <li><a href="#"><span class="fa fa-calendar"></span> My Calendar</a></li>
                      <li role="separator" class="divider"></li>
                      <li class="more">

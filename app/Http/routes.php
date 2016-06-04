@@ -20,5 +20,5 @@ Route::auth();
 
 Route::group(['middlewware' => ['web']], function () {
 	Route::get('/dashboard', 'dashboard@index')->middleware('auth');
-
+	Route::get('/dashboard/profile', 'dashboard@profile')->middleware('auth');
 });
