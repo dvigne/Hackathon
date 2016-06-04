@@ -57,7 +57,7 @@
               </ul>
 
               <ul class="nav navbar-nav navbar-right user-nav">
-                <li class="user-name"><span>Akihiko Avaron</span></li>
+                <li class="user-name"><span>{!! Auth::user()->first . " " . Auth::user()->last !!}</span></li>
                   <li class="dropdown avatar-dropdown">
                    <img src={!! URL::asset("asset/img/avatar.jpg") !!} class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="dropdown-menu user-dropdown">
@@ -204,7 +204,7 @@
                 <div class="col-md-9  profile-v1-cover-wrap" style="padding-right:0px;">
                     <div class="profile-v1-pp">
                       <img src={!! URL::asset("asset/img/avatar.jpg") !!}/>
-                      <h2>Akihiko Avaron</h2>
+                      <h2>{!! Auth::user()->first . " " . Auth::user()->last !!}</h2>
                       <input type="button" class="btn btn-danger" value="follow" />
                     </div>
                     <div class="col-md-12 profile-v1-cover">
@@ -233,7 +233,7 @@
                 </div>
              </div>
              <div class="col-md-12 col-sm-12 profile-v1-body">
-                <div class="col-md-7">
+                <div class="col-md-12">
                    <div class="box-v5 panel">
                     <div class="panel-heading padding-0 bg-white border-none">
                         <textarea placeholder="what do you think?"></textarea>
