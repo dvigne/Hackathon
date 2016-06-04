@@ -86,7 +86,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Learn Network Contractor Business Meetup</h1>
+                <h1>Learn Network</h1>
                 <hr>
                 <p>Using our services we can help contractors meet local business leaders in Lee County</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
