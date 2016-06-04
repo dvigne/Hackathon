@@ -190,7 +190,7 @@
                       <a href="/dashboard/profile/edit"><input type="button" class="btn btn-danger" value="Edit Profile" /></a>
                     </div>
                     <div class="col-md-12 profile-v1-cover">
-                      <img src={!! URL::asset("asset/img/bg1.jpg") !!} class="img-responsive">
+                      <img src={!! URL::asset("asset/img/bg5.jpg") !!} class="img-responsive">
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-12 padding-0 profile-v1-right">
