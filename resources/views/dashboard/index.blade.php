@@ -56,7 +56,7 @@
               </ul>
 
               <ul class="nav navbar-nav navbar-right user-nav">
-                <li class="user-name"><span>Akihiko Avaron</span></li>
+                <li class="user-name"><span>{!! Auth::user()->first . " " . Auth::user()->last !!}</span></li>
                   <li class="dropdown avatar-dropdown">
                    <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="dropdown-menu user-dropdown">
@@ -313,7 +313,7 @@
                                     <img src="asset/img/bg2.jpg" class="box-v2-cover img-responsive"/>
                                     <div class="box-v2-detail">
                                       <img src="asset/img/avatar.jpg" class="img-responsive"/>
-                                      <h4>Akihiko Avaron</h4>
+                                      <h4>{!! Auth::user()->first . " " . Auth::user()->last !!}</h4>
                                     </div>
                                   </div>
                                   <div class="panel-body">

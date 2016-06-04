@@ -18,4 +18,7 @@ Route::get('/', function () {
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::group(['middlewware' => ['web']], function () {
+	Route::get('/dashboard', 'dashboard@index')->middleware('auth');
+
+});
