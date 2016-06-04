@@ -12,4 +12,8 @@ class dashboard extends Controller
     {
     	return view('dashboard/index');
     }
+    public function profile()
+    {
+    	return view('dashboard/profile');
+    }
 }

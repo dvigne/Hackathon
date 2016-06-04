@@ -10,17 +10,17 @@
     <title>Miminium</title>
  
     <!-- start: Css -->
-    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/asset/css/bootstrap.min.css">
 
       <!-- plugins -->
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/font-awesome.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/simple-line-icons.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/fullcalendar.min.css"/>
-	<link href="asset/css/style.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href={!! URL::asset('asset/css/plugins/font-awesome.min.css') !!}/>
+      <link rel="stylesheet" type="text/css" href={!! URL::asset('asset/css/plugins/simple-line-icons.css') !!}/>
+      <link rel="stylesheet" type="text/css" href={!! URL::asset('asset/css/plugins/animate.min.css') !!}/>
+      <link rel="stylesheet" type="text/css" href={!! URL::asset('asset/css/plugins/fullcalendar.min.css') !!}/>
+	<link href={!! URL::asset('asset/css/style.css') !!} rel="stylesheet">
 	<!-- end: Css -->
 
-	<link rel="shortcut icon" href="asset/img/logomi.png">
+	<link rel="shortcut icon" href={!! URL::asset('/asset/img/logomi.png') !!}>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -60,13 +60,10 @@
                   <li class="dropdown avatar-dropdown">
                    <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="dropdown-menu user-dropdown">
-<<<<<<< HEAD
                      <li><a href="/dashboard/profile"><span class="fa fa-user"></span> My Profile</a></li>
                      <li><a href="#"><span class="fa fa-calendar"></span> My Calendar</a></li>
-=======
                      <li><a href="#"><span class="fa fa-user"></span> My Profile</a></li>
                      <li><a href="#"><span class="fa fa-calendar"></span> My Schedule</a></li>
->>>>>>> origin/Derick-Backend
                      <li role="separator" class="divider"></li>
                      <li class="more">
                       <ul>
@@ -351,24 +348,24 @@
        <!-- end: Mobile -->
 
     <!-- start: Javascript -->
-    <script src="asset/js/jquery.min.js"></script>
-    <script src="asset/js/jquery.ui.min.js"></script>
-    <script src="asset/js/bootstrap.min.js"></script>
+    <script src={!! URL::asset('asset/js/jquery.min.js') !!}></script>
+    <script src={!! URL::asset('asset/js/jquery.ui.min.js') !!}></script>
+    <script src={!! URL::asset('asset/js/bootstrap.min.js') !!}></script>
    
     
     <!-- plugins -->
-    <script src="asset/js/plugins/moment.min.js"></script>
-    <script src="asset/js/plugins/fullcalendar.min.js"></script>
-    <script src="asset/js/plugins/jquery.nicescroll.js"></script>
-    <script src="asset/js/plugins/jquery.vmap.min.js"></script>
-    <script src="asset/js/plugins/maps/jquery.vmap.world.js"></script>
-    <script src="asset/js/plugins/jquery.vmap.sampledata.js"></script>
-    <script src="asset/js/plugins/chart.min.js"></script>
+    <script src={!! URL::asset('asset/js/plugins/moment.min.js') !!}></script>
+    <script src={!! URL::asset('asset/js/plugins/fullcalendar.min.js') !!}></script>
+    <script src={!! URL::asset('asset/js/plugins/jquery.nicescroll.js') !!}></script>
+    <script src={!! URL::asset('asset/js/plugins/jquery.vmap.min.js') !!}></script>
+    <script src={!! URL::asset('asset/js/plugins/maps/jquery.vmap.world.js') !!}></script>
+    <script src={!! URL::asset('asset/js/plugins/jquery.vmap.sampledata.js') !!}></script>
+    <script src={!! URL::asset('asset/js/plugins/chart.min.js') !!}></script>
 
 
     <!-- custom -->
-     <script src="asset/js/main.js"></script>
-     <script type="text/javascript" src="js/dashboard.js"></script>
+     <script src={!! URL::asset('asset/js/main.js') !!}></script>
+     <script type="text/javascript" src={!! URL::asset('js/dashboard.js') !!}></script>
   <!-- end: Javascript -->
   </body>
 </html>
