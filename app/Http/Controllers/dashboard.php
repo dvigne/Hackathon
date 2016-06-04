@@ -33,4 +33,8 @@ class dashboard extends Controller
 
     	return redirect('/dashboard/profile');
     }
+    public function mail()
+    {
+    	return view('dashboard/mail_view');
+    }
 }
