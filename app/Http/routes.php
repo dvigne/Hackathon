@@ -10,11 +10,15 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+Route::group(['middleware' => ['web']], function () {
 Route::get('/', function () {
     return view('welcome');
+	});
 });
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::group(['middlewware' => ['web']], function () {
+	Route::get('/dashboard', 'dashboard@index')->middleware('auth');
+
+});
