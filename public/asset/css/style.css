@@ -5,7 +5,7 @@
 body {
   font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 13px;
-  background-color:#f0f3f4;
+  background-color:#636363;
   line-height: 1.42857143 !important;
   color: #58666e !important;
 }
@@ -17,7 +17,7 @@ a:hover {
   -ms-text-decoration: none;
   -o-text-decoration: none;
   text-decoration: none;
-  color: #df1b1b;
+  color: #2196F3;
   font-weight: bold;
 }
 
@@ -1781,7 +1781,7 @@ ul li a:focus {
 
   .navbar {
     height: 55px;
-    background-color: #2196F3;
+    background-color: #343434;
     color: #fff;
     border: none;
   }
