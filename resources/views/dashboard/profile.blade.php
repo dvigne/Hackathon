@@ -186,6 +186,7 @@
                     <div class="profile-v1-pp">
                       <img src={!! URL::asset("asset/img/avatar.jpg") !!}/>
                       <h2>{!! Auth::user()->first . " " . Auth::user()->last !!}</h2>
+                      <h4 style="color:white; padding:0px 0px 0px 20px;">{!! Auth::user()->role !!}</h4>
                       <a href="/dashboard/profile/edit"><input type="button" class="btn btn-danger" value="Edit Profile" /></a>
                     </div>
                     <div class="col-md-12 profile-v1-cover">
