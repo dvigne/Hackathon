@@ -186,7 +186,6 @@
                     <div class="profile-v1-pp">
                       <img src={!! URL::asset("asset/img/avatar.jpg") !!}/>
                       <h2>{!! Auth::user()->first . " " . Auth::user()->last !!}</h2>
-                      <a href="/dashboard/profile/edit"><input type="button" class="btn btn-success" value="Save Changes" /></a>
                     </div>
                     <div class="col-md-12 profile-v1-cover">
                       <img src={!! URL::asset("asset/img/bg1.jpg") !!} class="img-responsive">
@@ -221,18 +220,24 @@
                         </div>
                          <div class="panel-body" style="padding-bottom:30px;">
                           <div class="col-md-12">
+                          <form method="POST" action="/dashboard/profile/edit" role="form">
+                            {!! csrf_field() !!}
                             <div class="form-group" style="padding-bottom:2.5em;"><label class="col-sm-2 control-label text-right">First Name</label>
-                              <div class="col-sm-10"><input class="form-control" type="text"></div>
+                              <div class="col-sm-10"><input name="first" class="form-control" type="text" value={!! Auth::user()->first !!}></div>
                             </div>
                             <div class="form-group" style="padding-bottom:2.5em;"><label class="col-sm-2 control-label text-right">Last Name</label>
-                              <div class="col-sm-10"><input class="form-control" type="text"></div>
+                              <div class="col-sm-10"><input name="last" class="form-control" type="text" value={!! Auth::user()->last !!}></div>
                             </div>
                             <div class="form-group" style="padding-bottom:2.5em;"><label class="col-sm-2 control-label text-right">Email</label>
-                              <div class="col-sm-10"><input class="form-control" type="text"></div>
+                              <div class="col-sm-10"><input name="email" class="form-control" type="text" value= {!! Auth::user()->email !!}></div>
                             </div>
                             <div class="form-group" style="padding-bottom:2.5em;"><label class="col-sm-2 control-label text-right">Who Are You?</label>
-                              <div class="col-sm-10"><input class="form-control" type="text"></div>
+                              <div class="col-sm-10"><input name="role" class="form-control" type="text" value={!! Auth::user()->role !!}></div>
                             </div>
+                            <div style="float:right;" class="col-md-6">
+                              <input style="float:right;" class="btn btn-round btn-success" value="success" type="submit">
+                            </div>
+                            </form>
                               </div>
                             </div>
                           </div>

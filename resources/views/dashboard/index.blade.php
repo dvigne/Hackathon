@@ -62,8 +62,6 @@
                    <ul class="dropdown-menu user-dropdown">
                      <li><a href="/dashboard/profile"><span class="fa fa-user"></span> My Profile</a></li>
                      <li><a href="#"><span class="fa fa-calendar"></span> My Calendar</a></li>
-                     <li><a href="#"><span class="fa fa-user"></span> My Profile</a></li>
-                     <li><a href="#"><span class="fa fa-calendar"></span> My Schedule</a></li>
                      <li role="separator" class="divider"></li>
                      <li class="more">
                       <ul>
