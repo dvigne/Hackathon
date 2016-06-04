@@ -64,12 +64,18 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-                    <li>
-                        <a href="/login">Login</a>
-                    </li>
-                    <li>
-                        <a href="/register">Register</a>
-                    </li>
+                    @if(Auth::check())
+                        <li>
+                        <a href="/dashboard">{!! Auth::user()->first . " " . Auth::user()->last; !!}</a>
+                        </li>
+                    @else
+                        <li>
+                            <a href="/login">Login</a>
+                        </li>
+                        <li>
+                            <a href="/register">Register</a>
+                        </li>
+                    @endif
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
