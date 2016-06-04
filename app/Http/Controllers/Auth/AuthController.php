@@ -48,12 +48,16 @@ class AuthController extends Controller
      */
     protected function validator(array $data)
     {
+        $messages = [
+            'first.required' => 'The first name field is required',
+            'last.required' => 'The first name field is required',
+        ];
         return Validator::make($data, [
             'first' => 'required|max:255',
             'last' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
-        ]);
+        ], $messages);
     }
 
     /**
