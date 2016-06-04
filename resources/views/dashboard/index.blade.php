@@ -100,16 +100,6 @@
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-diamond fa"></span> User View Layouts
-                        <span class="fa-angle-right fa right-arrow text-right"></span>
-                      </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="topnav.html">Admin View</a></li>
-                        <li><a href="boxed.html">Client View</a></li>
-                      </ul>
-                    </li>
-                    <li class="ripple">
-                      <a class="tree-toggle nav-header">
                         <span class="fa-area-chart fa"></span> DataView
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
@@ -122,19 +112,11 @@
                     <li class="ripple"><a class="tree-toggle nav-header">
                     <span class="fa fa-pencil-square"></span> Applications  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                       <ul class="nav nav-list tree">
-                        <li><a href="color.html">Color</a></li>
-                        <li><a href="weather.html">Weather</a></li>
-                        <li><a href="typography.html">Typography</a></li>
-                        <li><a href="icons.html">Icons</a></li>
-                        <li><a href="buttons.html">Buttons</a></li>
-                        <li><a href="media.html">Media</a></li>
-                        <li><a href="panels.html">Panels & Tabs</a></li>
-                        <li><a href="notifications.html">Notifications & Tooltip</a></li>
-                        <li><a href="badges.html">Badges & Label</a></li>
-                        <li><a href="progress.html">Progress</a></li>
-                        <li><a href="sliders.html">Sliders</a></li>
-                        <li><a href="timeline.html">Timeline</a></li>
-                        <li><a href="modal.html">Modals</a></li>
+                        <li><a href="appoverview.html"><b>Overview</b></a></li>
+                        <li><a href="techapps.html">Tech Applications</a></li>
+                        <li><a href="healthapps.html">Health Applications</a></li>
+                        <li><a href="educationapps.html">Educational Applications</a></li>
+                        <li><a href="scienceapps.html">Science Applications</a></li>
                       </ul>
                     </li>
                     <li class="ripple"><a href="calendar.html"><span class="fa fa-calendar-o"></span> My Schedule</a></li>
@@ -143,6 +125,16 @@
                         <li><a href="mail-box.html">Inbox</a></li>
                         <li><a href="compose-mail.html">Compose Mail</a></li>
                       </ul>
+                     <li class="ripple">
+                      <a class="tree-toggle nav-header">
+                        <span class="fa-diamond fa"></span> User View Layouts
+                        <span class="fa-angle-right fa right-arrow text-right"></span>
+                      </a>
+                      <ul class="nav nav-list tree">
+                        <li><a href="topnav.html">Admin View</a></li>
+                        <li><a href="boxed.html">Client View</a></li>
+                      </ul>
+                    </li>
                     </li>
                     <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-file-code-o"></span> Settings <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                       <ul class="nav nav-list tree">
@@ -293,19 +285,11 @@
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                        <li><a href="color.html">Color</a></li>
-                        <li><a href="weather.html">Weather</a></li>
-                        <li><a href="typography.html">Typography</a></li>
-                        <li><a href="icons.html">Icons</a></li>
-                        <li><a href="buttons.html">Buttons</a></li>
-                        <li><a href="media.html">Media</a></li>
-                        <li><a href="panels.html">Panels & Tabs</a></li>
-                        <li><a href="notifications.html">Notifications & Tooltip</a></li>
-                        <li><a href="badges.html">Badges & Label</a></li>
-                        <li><a href="progress.html">Progress</a></li>
-                        <li><a href="sliders.html">Sliders</a></li>
-                        <li><a href="timeline.html">Timeline</a></li>
-                        <li><a href="modal.html">Modals</a></li>
+                        <li><a href="appoverview.html"><b>Overview</b></a></li>
+                        <li><a href="techapps.html">Tech Applications</a></li>
+                        <li><a href="healthapps.html">Health Applications</a></li>
+                        <li><a href="educationapps.html">Educational Applications</a></li>
+                        <li><a href="scienceapps.html">Science Applications</a></li>
                       </ul>
                     </li>
                     <li class="ripple">
