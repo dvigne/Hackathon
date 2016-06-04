@@ -16,4 +16,7 @@ class dashboard extends Controller
     {
     	return view('dashboard/profile');
     }
+    public function prof_edit()
+    {
+    }
 }

@@ -186,7 +186,7 @@
                     <div class="profile-v1-pp">
                       <img src={!! URL::asset("asset/img/avatar.jpg") !!}/>
                       <h2>{!! Auth::user()->first . " " . Auth::user()->last !!}</h2>
-                      <a href="/dashboard/profile/edit"><input type="button" class="btn btn-danger" value="Edit Profile" /></a>
+                      <a href="/dashboard/profile/edit"><input type="button" class="btn btn-success" value="Save Changes" /></a>
                     </div>
                     <div class="col-md-12 profile-v1-cover">
                       <img src={!! URL::asset("asset/img/bg1.jpg") !!} class="img-responsive">
@@ -214,23 +214,31 @@
                 </div>
              </div>
              <div class="col-md-12 col-sm-12 profile-v1-body">
-                <div class="col-md-12">
-                   <div class="box-v5 panel">
-                    <div class="panel-heading padding-0 bg-white border-none">
-                        <textarea placeholder="what do you think?"></textarea>
-                    </div>
-                    <div class="panel-body">
-                      <div class="col-md-12 padding-0">
-                        <div style="float:right;" class="col-md-6 col-sm-6 col-xs-6 padding-0">
-                          <button class="btn btn-round pull-right">
-                            <span>SEND</span>
-                            <span class="icon-arrow-right icons"></span>
-                          </button>
+                <div class="col-md-10">
+                      <div class="panel form-element-padding">
+                        <div class="panel-heading">
+                         <h4>Basic Element</h4>
+                        </div>
+                         <div class="panel-body" style="padding-bottom:30px;">
+                          <div class="col-md-12">
+                            <div class="form-group" style="padding-bottom:2.5em;"><label class="col-sm-2 control-label text-right">First Name</label>
+                              <div class="col-sm-10"><input class="form-control" type="text"></div>
+                            </div>
+                            <div class="form-group" style="padding-bottom:2.5em;"><label class="col-sm-2 control-label text-right">Last Name</label>
+                              <div class="col-sm-10"><input class="form-control" type="text"></div>
+                            </div>
+                            <div class="form-group" style="padding-bottom:2.5em;"><label class="col-sm-2 control-label text-right">Email</label>
+                              <div class="col-sm-10"><input class="form-control" type="text"></div>
+                            </div>
+                            <div class="form-group" style="padding-bottom:2.5em;"><label class="col-sm-2 control-label text-right">Who Are You?</label>
+                              <div class="col-sm-10"><input class="form-control" type="text"></div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
              </div>
           </div>
           <!-- end: content -->
