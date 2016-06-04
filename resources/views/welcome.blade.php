@@ -143,7 +143,7 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
                         <h3>Made with Love</h3>
-                        <p class="text-muted">This site was designed with helping in mind. It was developed to help benefit the friendly and wonderful peopel of Lee County, Fl</p>
+                        <p class="text-muted">This site was designed with helping in mind. It was developed to help benefit the friendly and wonderful people of Lee County, Fl</p>
                     </div>
                 </div>
             </div>
