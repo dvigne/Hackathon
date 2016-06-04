@@ -49,7 +49,7 @@
                     <div class="form-group form-animate-text">
                       <input type="text" class="form-text" required>
                       <span class="bar"></span>
-                      <label class="label-search">Type anywhere to <b>Search</b> </label>
+                      <label class="label-search">Click me to <b>Search</b> </label>
                     </div>
                   </div>
                 </li>
@@ -61,7 +61,7 @@
                    <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="dropdown-menu user-dropdown">
                      <li><a href="#"><span class="fa fa-user"></span> My Profile</a></li>
-                     <li><a href="#"><span class="fa fa-calendar"></span> My Calendar</a></li>
+                     <li><a href="#"><span class="fa fa-calendar"></span> My Schedule</a></li>
                      <li role="separator" class="divider"></li>
                      <li class="more">
                       <ul>
@@ -91,17 +91,16 @@
                     </li>
                     <li class="active ripple">
                       <a class="tree-toggle nav-header"><span class="fa-home fa"></span> HOME
-                        <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-diamond fa"></span> Layout
+                        <span class="fa-diamond fa"></span> User View Layouts
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                        <li><a href="topnav.html">Top Navigation</a></li>
-                        <li><a href="boxed.html">Boxed</a></li>
+                        <li><a href="topnav.html">Admin View</a></li>
+                        <li><a href="boxed.html">Client View</a></li>
                       </ul>
                     </li>
                     <li class="ripple">
@@ -110,14 +109,13 @@
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                        <li><a href="chartjs.html">ChartJs</a></li>
-                        <li><a href="morris.html">Morris</a></li>
-                        <li><a href="flot.html">Flot</a></li>
-                        <li><a href="sparkline.html">SparkLine</a></li>
+                        <li><a href="chartjs.html">Bar Chart</a></li>
+                        <li><a href="morris.html">Line Graph</a></li>
+                        <li><a href="flot.html">Pie Chart</a></li>
                       </ul>
                     </li>
                     <li class="ripple"><a class="tree-toggle nav-header">
-                    <span class="fa fa-pencil-square"></span> Ui Elements  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    <span class="fa fa-pencil-square"></span> Applications  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                       <ul class="nav nav-list tree">
                         <li><a href="color.html">Color</a></li>
                         <li><a href="weather.html">Weather</a></li>
@@ -134,15 +132,14 @@
                         <li><a href="modal.html">Modals</a></li>
                       </ul>
                     </li>
-                    <li class="ripple"><a href="calendar.html"><span class="fa fa-calendar-o"></span>My Schedule</a></li>
+                    <li class="ripple"><a href="calendar.html"><span class="fa fa-calendar-o"></span> My Schedule</a></li>
                     <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-envelope-o"></span> Mail <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                       <ul class="nav nav-list tree">
                         <li><a href="mail-box.html">Inbox</a></li>
                         <li><a href="compose-mail.html">Compose Mail</a></li>
-                        <li><a href="view-mail.html">View Mail</a></li>
                       </ul>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-file-code-o"></span> Pages  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-file-code-o"></span> Settings <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                       <ul class="nav nav-list tree">
                         <li><a href="forgotpass.html">Forgot Password</a></li>
                         <li><a href="login.html">SignIn</a></li>
@@ -261,39 +258,33 @@
                 <ul class="nav nav-list">
                     <li class="active ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-home fa"></span>Dashboard 
+                        <span class="fa-home fa"></span>HOME
+                      </a>
+                    </li>
+                    <li class="ripple">
+                      <a class="tree-toggle nav-header">
+                        <span class="fa-diamond fa"></span>User View Layouts
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                          <li><a href="dashboard-v1.html">Dashboard v.1</a></li>
-                          <li><a href="dashboard-v2.html">Dashboard v.2</a></li>
+                        <li><a href="topnav.html">Admin View</a></li>
+                        <li><a href="boxed.html">Client View</a></li>
                       </ul>
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-diamond fa"></span>Layout
+                        <span class="fa-area-chart fa"></span>DataView
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                        <li><a href="topnav.html">Top Navigation</a></li>
-                        <li><a href="boxed.html">Boxed</a></li>
+                        <li><a href="chartjs.html">Bar Graph</a></li>
+                        <li><a href="morris.html">Line Graph</a></li>
+                        <li><a href="flot.html">Pie Chart</a></li>
                       </ul>
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-area-chart fa"></span>Charts
-                        <span class="fa-angle-right fa right-arrow text-right"></span>
-                      </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="chartjs.html">ChartJs</a></li>
-                        <li><a href="morris.html">Morris</a></li>
-                        <li><a href="flot.html">Flot</a></li>
-                        <li><a href="sparkline.html">SparkLine</a></li>
-                      </ul>
-                    </li>
-                    <li class="ripple">
-                      <a class="tree-toggle nav-header">
-                        <span class="fa fa-pencil-square"></span>Ui Elements
+                        <span class="fa fa-pencil-square"></span>Applications
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
@@ -313,31 +304,8 @@
                       </ul>
                     </li>
                     <li class="ripple">
-                      <a class="tree-toggle nav-header">
-                       <span class="fa fa-check-square-o"></span>Forms
-                       <span class="fa-angle-right fa right-arrow text-right"></span>
-                      </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="formelement.html">Form Element</a></li>
-                        <li><a href="#">Wizard</a></li>
-                        <li><a href="#">File Upload</a></li>
-                        <li><a href="#">Text Editor</a></li>
-                      </ul>
-                    </li>
-                    <li class="ripple">
-                      <a class="tree-toggle nav-header">
-                        <span class="fa fa-table"></span>Tables
-                        <span class="fa-angle-right fa right-arrow text-right"></span>
-                      </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="datatables.html">Data Tables</a></li>
-                        <li><a href="handsontable.html">handsontable</a></li>
-                        <li><a href="tablestatic.html">Static</a></li>
-                      </ul>
-                    </li>
-                    <li class="ripple">
                       <a href="calendar.html">
-                         <span class="fa fa-calendar-o"></span>Calendar
+                         <span class="fa fa-calendar-o"></span>My Schedule
                       </a>
                     </li>
                     <li class="ripple">
@@ -348,12 +316,11 @@
                       <ul class="nav nav-list tree">
                         <li><a href="mail-box.html">Inbox</a></li>
                         <li><a href="compose-mail.html">Compose Mail</a></li>
-                        <li><a href="view-mail.html">View Mail</a></li>
                       </ul>
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa fa-file-code-o"></span>Pages
+                        <span class="fa fa-file-code-o"></span>Settings
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
