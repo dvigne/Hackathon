@@ -90,13 +90,9 @@
                       <p class="animated fadeInRight">Sat,October 1st 2029</p>
                     </li>
                     <li class="active ripple">
-                      <a class="tree-toggle nav-header"><span class="fa-home fa"></span> Dashboard 
+                      <a class="tree-toggle nav-header"><span class="fa-home fa"></span> HOME
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
-                      <ul class="nav nav-list tree">
-                          <li><a href="dashboard-v1.html">Dashboard v.1</a></li>
-                          <li><a href="dashboard-v2.html">Dashboard v.2</a></li>
-                      </ul>
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
@@ -136,21 +132,6 @@
                         <li><a href="sliders.html">Sliders</a></li>
                         <li><a href="timeline.html">Timeline</a></li>
                         <li><a href="modal.html">Modals</a></li>
-                      </ul>
-                    </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Forms  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="formelement.html">Form Element</a></li>
-                        <li><a href="#">Wizard</a></li>
-                        <li><a href="#">File Upload</a></li>
-                        <li><a href="#">Text Editor</a></li>
-                      </ul>
-                    </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-table"></span> Tables  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="datatables.html">Data Tables</a></li>
-                        <li><a href="handsontable.html">handsontable</a></li>
-                        <li><a href="tablestatic.html">Static</a></li>
                       </ul>
                     </li>
                     <li class="ripple"><a href="calendar.html"><span class="fa fa-calendar-o"></span>My Schedule</a></li>
