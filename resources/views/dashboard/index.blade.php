@@ -7,7 +7,7 @@
 	<meta name="author" content="Isna Nur Azis">
 	<meta name="keyword" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Miminium</title>
+    <title>LEARN</title>
  
     <!-- start: Css -->
     <link rel="stylesheet" type="text/css" href="/asset/css/bootstrap.min.css">
@@ -61,14 +61,11 @@
                    <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="dropdown-menu user-dropdown">
                      <li><a href="/dashboard/profile"><span class="fa fa-user"></span> My Profile</a></li>
-                     <li><a href="#"><span class="fa fa-calendar"></span> My Calendar</a></li>
-                     <li><a href="#"><span class="fa fa-user"></span> My Profile</a></li>
                      <li><a href="#"><span class="fa fa-calendar"></span> My Schedule</a></li>
                      <li role="separator" class="divider"></li>
                      <li class="more">
                       <ul>
                         <li><a href=""><span class="fa fa-cogs"></span></a></li>
-                        <li><a href=""><span class="fa fa-lock"></span></a></li>
                         <li><a href="/logout"><span class="fa fa-power-off "></span></a></li>
                       </ul>
                     </li>
@@ -153,7 +150,7 @@
                 <div class="panel">
                   <div class="panel-body">
                       <div class="col-md-6 col-sm-12">
-                        <h3 class="animated fadeInLeft">{!! "Welcome " . Auth::user()->first . " To Your Overview" !!}</h3>
+                        <h3 class="animated fadeInLeft">{!! "Hey, " . Auth::user()->first . "." !!}</h3>
                         <p class="animated fadeInDown">{!! "Profile Created " . Auth::user()->created_at->diffForHumans() !!}</p>
                     </div>
                   </div>                    
