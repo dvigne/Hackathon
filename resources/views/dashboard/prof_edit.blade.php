@@ -216,7 +216,7 @@
                 <div class="col-md-10">
                       <div class="panel form-element-padding">
                         <div class="panel-heading">
-                         <h4>Basic Element</h4>
+                         <h4>Your Profile Details</h4>
                         </div>
                          <div class="panel-body" style="padding-bottom:30px;">
                           <div class="col-md-12">
