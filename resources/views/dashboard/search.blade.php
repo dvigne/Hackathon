@@ -47,7 +47,7 @@
                    <div class="search">
                     <span class="fa fa-search icon-search" style="font-size:23px;"></span>
                     <div class="form-group form-animate-text">
-                      <form role="form" method="POST" action="/dashboard">
+                      <form role="form" method="POST" action="/dashboard/search">
                       {!! csrf_field() !!}
                       <input name="search" type="text" class="form-text" required>
                       <span class="bar"></span>
@@ -164,32 +164,6 @@
                 <div class="panel">
                   <div class="panel-body">
                   <div class="col-md-12 padding-0" style="padding-bottom:20px;">
-                    <div class="col-md-6" style="padding-left:10px;">
-                        <div style="position: relative;" class="icheckbox_flat-red"><input style="position: absolute; opacity: 0;" class="icheck pull-left" name="checkbox1" type="checkbox"><ins style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;" class="iCheck-helper"></ins></div>
-                        <select>
-                            <option>Delete</option>
-                            <option>Ignore</option>
-                            <option>Cancel</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                         <div class="col-lg-12">
-                            <div class="input-group">
-                              <input class="form-control" aria-label="..." type="text">
-                              <div class="input-group-btn">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search<span class="caret"></span></button>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                  <li><a href="#">Action</a></li>
-                                  <li><a href="#">Another action</a></li>
-                                  <li><a href="#">Something else here</a></li>
-                                  <li role="separator" class="divider"></li>
-                                  <li><a href="#">Separated link</a></li>
-                                </ul>
-                              </div><!-- /btn-group -->
-                            </div><!-- /input-group -->
-                          </div><!-- /.col-lg-6 -->
-                    </div>
-                 </div>
                   <div class="responsive-table">
                       
                     <table class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -218,7 +192,7 @@
                   </table>
                   </div>
                   <div class="col-md-6" style="padding-top:20px;">
-                    <span>showing 0-10 of 30 items</span>
+                    <span>{!! "showing " . $results->count() . " of " . $results->total() . " items" !!}</span>
                   </div>
                   <div class="col-md-6">
                         {!! $results->links(); !!}

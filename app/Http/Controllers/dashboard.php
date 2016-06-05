@@ -17,7 +17,10 @@ class dashboard extends Controller
     public function search(Request $request)
     {
         $search_query = $request->input('search');
-        $results = DB::table('users')->where('role', 'like', "%" . $search_query . "%")->paginate(15);
+        $results = DB::table('users')->where('role', 'like', "%" . $search_query . "%")
+        ->orWhere('first', 'like', "%" . $search_query . "%")
+        ->orWhere('last', 'like', "%" . $search_query . "%")
+        ->orWhere('email', 'like', "%" . $search_query . "%")->paginate(15);
         return view('dashboard/search', compact('results'));
     }
     public function profile()
