@@ -7,7 +7,7 @@
   <meta name="author" content="Isna Nur Azis">
   <meta name="keyword" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Miminium</title>
+  <title>ERROR 404</title>
 
   <!-- start: Css -->
   <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
@@ -35,7 +35,7 @@
     <center>
       <div class="page-404 animated flipInX">
         <img src="asset/img/404.png" class="img-responsive"/>
-        <a href="#"> Back To Home
+        <a href="/dashboard"> Back To Home
           </br>
           <span class="icons icon-arrow-down"></span>
         </a>
