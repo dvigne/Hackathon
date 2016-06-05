@@ -31,6 +31,11 @@ class dashboard extends Controller
     {
     	return view('dashboard/prof_edit');
     }
+    public function profview($id)
+    {
+        $selected_user = \App\user::find($id);
+        return view('dashboard/view_user', compact('selected_user'));
+    }
     public function prof_edit_save(Request $request)
     {
     	$first = $request->input('first');
