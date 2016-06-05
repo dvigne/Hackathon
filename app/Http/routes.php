@@ -20,6 +20,7 @@ Route::auth();
 
 Route::group(['middlewware' => ['web']], function () {
 	Route::get('/dashboard', 'dashboard@index')->middleware('auth');
+	Route::post('/dashboard', 'dashboard@search')->middleware('auth');
 	Route::get('/dashboard/profile', 'dashboard@profile')->middleware('auth');
 	Route::get('/dashboard/profile/edit', 'dashboard@prof_edit')->middleware('auth');
 	Route::post('/dashboard/profile/edit', 'dashboard@prof_edit_save')->middleware('auth');

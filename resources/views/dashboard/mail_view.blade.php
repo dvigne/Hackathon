@@ -322,6 +322,7 @@
                           </div>
                           <div class="col-md-12 mail-right-content">
                               <table class="table table-hover">
+                                
                                   <p> You have no messages to display</p>
                               </table>
                           </div>

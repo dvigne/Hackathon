@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\User;
+use DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -12,6 +13,12 @@ class dashboard extends Controller
     public function index()
     {
     	return view('dashboard/index');
+    }
+    public function search(Request $request)
+    {
+        $search_query = $request->input('search');
+        $results = DB::table('users')->where('role', 'like', "%" . $search_query . "%")->paginate(15);
+        return view('dashboard/search', compact('results'));
     }
     public function profile()
     {

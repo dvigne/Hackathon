@@ -159,62 +159,74 @@
                   </div>                    
                 </div>
 
-                <div class="col-md-12" style="padding:20px;">
-                    <div class="col-md-12 padding-0">
-                        <div class="col-md-12 padding-0">
-                            <div class="col-md-12 padding-0">
-                                <div class="col-md-6">
-                                    <div class="panel box-v1">
-                                      <div class="panel-heading bg-white border-none">
-                                        <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
-                                          <h4 class="text-left">Requests</h4>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-xs-6 text-right">
-                                           <h4>
-                                           <span class="icon-user icons icon text-right"></span>
-                                           </h4>
-                                        </div>
-                                      </div>
-                                      <div class="panel-body text-center">
-                                        <h1>0</h1>
-                                        <p>Active Requests</p>
-                                        <hr/>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="panel box-v1">
-                                      <div class="panel-heading bg-white border-none">
-                                        <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
-                                          <h4 class="text-left">Meetings</h4>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-xs-6 text-right">
-                                           <h4>
-                                           <span class="icon-basket-loaded icons icon text-right"></span>
-                                           </h4>
-                                        </div>
-                                      </div>
-                                      <div class="panel-body text-center">
-                                        <h1>0</h1>
-                                        <p>Scheduled</p>
-                                        <hr/>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="panel box-v4">
-                                    <div class="panel-heading bg-white border-none">
-                                      <h4><span class="icon-notebook icons"></span> Agenda</h4>
-                                    </div>
-                                    <div class="panel-body padding-0">
-                                        <div class="calendar">
-                                          
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
+                <div class="col-md-12 top-20 padding-0">
+              <div class="col-md-12">
+                <div class="panel">
+                  <div class="panel-body">
+                  <div class="col-md-12 padding-0" style="padding-bottom:20px;">
+                    <div class="col-md-6" style="padding-left:10px;">
+                        <div style="position: relative;" class="icheckbox_flat-red"><input style="position: absolute; opacity: 0;" class="icheck pull-left" name="checkbox1" type="checkbox"><ins style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;" class="iCheck-helper"></ins></div>
+                        <select>
+                            <option>Delete</option>
+                            <option>Ignore</option>
+                            <option>Cancel</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                         <div class="col-lg-12">
+                            <div class="input-group">
+                              <input class="form-control" aria-label="..." type="text">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search<span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                                </ul>
+                              </div><!-- /btn-group -->
+                            </div><!-- /input-group -->
+                          </div><!-- /.col-lg-6 -->
+                    </div>
+                 </div>
+                  <div class="responsive-table">
+                      
+                    <table class="table table-striped table-bordered" cellspacing="0" width="100%">
+                    <thead>
+                      <tr>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Email</th>
+                        <th>Specialty</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    @if($results->count() > 0)
+                      @foreach($results as $people)
+                        <tr>
+                          <th>{!! $people->first !!}</th>
+                          <th>{!! $people->last !!}</th>
+                          <th>{!! $people->email !!}</th>
+                          <th>{!! $people->role !!}</th>
+                        </tr>
+                      @endforeach
+                    @else
+                      <p>No Results Found</p>
+                    @endif
+                    </tbody>
+                  </table>
+                  </div>
+                  <div class="col-md-6" style="padding-top:20px;">
+                    <span>showing 0-10 of 30 items</span>
+                  </div>
+                  <div class="col-md-6">
+                        {!! $results->links(); !!}
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
           <!-- end: content -->
 
     
