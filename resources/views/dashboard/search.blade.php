@@ -47,7 +47,7 @@
                    <div class="search">
                     <span class="fa fa-search icon-search" style="font-size:23px;"></span>
                     <div class="form-group form-animate-text">
-                      <form role="form" method="POST" action="/dashboard">
+                      <form role="form" method="POST" action="/dashboard/search">
                       {!! csrf_field() !!}
                       <input name="search" type="text" class="form-text" required>
                       <span class="bar"></span>
@@ -159,62 +159,48 @@
                   </div>                    
                 </div>
 
-                <div class="col-md-12" style="padding:20px;">
-                    <div class="col-md-12 padding-0">
-                        <div class="col-md-12 padding-0">
-                            <div class="col-md-12 padding-0">
-                                <div class="col-md-6">
-                                    <div class="panel box-v1">
-                                      <div class="panel-heading bg-white border-none">
-                                        <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
-                                          <h4 class="text-left">Requests</h4>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-xs-6 text-right">
-                                           <h4>
-                                           <span class="icon-user icons icon text-right"></span>
-                                           </h4>
-                                        </div>
-                                      </div>
-                                      <div class="panel-body text-center">
-                                        <h1>0</h1>
-                                        <p>Active Requests</p>
-                                        <hr/>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="panel box-v1">
-                                      <div class="panel-heading bg-white border-none">
-                                        <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
-                                          <h4 class="text-left">Meetings</h4>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-xs-6 text-right">
-                                           <h4>
-                                           <span class="icon-basket-loaded icons icon text-right"></span>
-                                           </h4>
-                                        </div>
-                                      </div>
-                                      <div class="panel-body text-center">
-                                        <h1>0</h1>
-                                        <p>Scheduled</p>
-                                        <hr/>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="panel box-v4">
-                                    <div class="panel-heading bg-white border-none">
-                                      <h4><span class="icon-notebook icons"></span> Agenda</h4>
-                                    </div>
-                                    <div class="panel-body padding-0">
-                                        <div class="calendar">
-                                          
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
+                <div class="col-md-12 top-20 padding-0">
+              <div class="col-md-12">
+                <div class="panel">
+                  <div class="panel-body">
+                  <div class="col-md-12 padding-0" style="padding-bottom:20px;">
+                  <div class="responsive-table">
+                      
+                    <table class="table table-striped table-bordered" cellspacing="0" width="100%">
+                    <thead>
+                      <tr>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Email</th>
+                        <th>Specialty</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    @if($results->count() > 0)
+                      @foreach($results as $people)
+                        <tr>
+                          <th>{!! $people->first !!}</th>
+                          <th>{!! $people->last !!}</th>
+                          <th>{!! $people->email !!}</th>
+                          <th>{!! $people->role !!}</th>
+                        </tr>
+                      @endforeach
+                    @else
+                      <p>No Results Found</p>
+                    @endif
+                    </tbody>
+                  </table>
+                  </div>
+                  <div class="col-md-6" style="padding-top:20px;">
+                    <span>{!! "showing " . $results->count() . " of " . $results->total() . " items" !!}</span>
+                  </div>
+                  <div class="col-md-6">
+                        {!! $results->links(); !!}
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
           <!-- end: content -->
 
     

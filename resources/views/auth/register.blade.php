@@ -80,7 +80,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Welcome Back</h1>
+                <h1>Happy To Make Your Acquaintance</h1>
                 <br>
                 <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                     {{ csrf_field() }}

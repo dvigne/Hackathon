@@ -64,12 +64,18 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-                    <li>
-                        <a href="/login">Login</a>
-                    </li>
-                    <li>
-                        <a href="/register">Register</a>
-                    </li>
+                    @if(Auth::check())
+                        <li>
+                        <a href="/dashboard">{!! Auth::user()->first . " " . Auth::user()->last; !!}</a>
+                        </li>
+                    @else
+                        <li>
+                            <a href="/login">Login</a>
+                        </li>
+                        <li>
+                            <a href="/register">Register</a>
+                        </li>
+                    @endif
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -80,7 +86,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Learn Network Contractor Business Meetup</h1>
+                <h1>Learn Network</h1>
                 <hr>
                 <p>Using our services we can help contractors meet local business leaders in Lee County</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
@@ -137,7 +143,7 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
                         <h3>Made with Love</h3>
-                        <p class="text-muted">This site was designed with helping in mind. It was developed to help benefit the friendly and wonderful peopel of Lee County, Fl</p>
+                        <p class="text-muted">This site was designed with helping in mind. It was developed to help benefit the friendly and wonderful people of Lee County, Fl</p>
                     </div>
                 </div>
             </div>
